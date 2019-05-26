@@ -29,11 +29,12 @@ const path = require('path');
 // });
 
 /*_____________CONTEXT_______________ */
-process.env.ASSET_PATH = 'Heloooo'
 const CONTEXT = path.resolve(__dirname, '../');
-console.log('CONTEXT = ', CONTEXT);
+process.env.CONTEXT = CONTEXT;
+// console.log('CONTEXT = ', CONTEXT);
+process.env.ASSET_PATH = 'Heloooo'
 const ASSET_PATH = process.env.ASSET_PATH || '/';
-console.log('ASSET_PATH = ', ASSET_PATH);
+// console.log('ASSET_PATH = ', ASSET_PATH);
 /* __________ENTRY__POINT_____________*/
 // const $ENTRY = './src/index.js'
 const dir = './dist';
